@@ -1,7 +1,9 @@
-howdy!
+<h1>Howdy!</h1>
 
-<%= Item.all.each do |the item| %>
+<% Item.all.each do |the_item| %>
   <div>
-    <%= the_item.id %>
+    <a href="<%= the_item.link_url %>">
+      <%= the_item.link_description %>
+    </a>
   </div>
-<%= end %>
+<% end %>
